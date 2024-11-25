@@ -1,0 +1,19 @@
+@charset 'utf-8';
+
+html,body, head,table,h1,h2,h3,h4,h5,h6,p,div,blockquote,address,ul,ol,li,dl,dt,dd,table,tr,th,td,caption,thead,tbody,tfoot,form,legend,fieldset,header,nav,aside,figure,section,article,main,footer {margin: 0; padding: 0;}
+header,nav,aside,section,article,main,footer,figure {display: block;}
+
+a {text-decoration: none; color: inherit;}
+li {list-style: none;}
+table {border-collapse: collapse;}
+
+em,i,address,cite {font-size: normal;} /* 기울임체 속성 해제 */
+
+caption, .blind {font-size: 0; line-height: 0; height: 0; overflow: hidden; text-indent: -9999px;}
+/*  text-indent : 문장을 들여쓰기 (첫문장의 첫 단어만 들여쓰기) +는 들여쓰기 -화면에서 보이지 않게 밀어보이게 함.  화면에서 숨김 처리를 할때 사용 */
+
+.clear:before, .clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}

@@ -1,0 +1,334 @@
+@charset "utf-8";
+
+* { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
+.inner {width: 1240px; margin: 0 auto; padding: 0 20px; box-sizing: border-box;}
+
+h1 {font-family: "Diphylleia-Regular";}
+h3 {position: relative; margin-bottom: 80px; color: #fcfcfc; font-size: 30px;}
+h3::after {position: absolute; left: 0; bottom: 0; width: 620px; height: 2px; background: #fcfcfc; content: '';}
+
+
+/* header */
+header {background: #0d0d0d; position: fixed; width: 100%; top: 0; opacity: 0.89; z-index: 10;}
+.head {overflow: hidden; height: 45px; }
+.head > h1 {float: left; width: 50%; font-size: 24px; color: #fcfcfc;}
+.head > nav {overflow: hidden; font-family: 'Spoqa Han Sans Neo', 'sans-serif';}
+.head > nav > ul { overflow: hidden; color: #fcfcfc;}
+.head > nav > ul > li {float: left; width: calc(100%/4); text-align: center; line-height: 45px; font-size: 15px; text-align: center;} 
+.head > nav > ul > li a {display: block; position: relative; overflow: hidden; cursor: pointer; transition: 0.9s; }
+.head > nav > ul > li a:after {position: absolute; left: 50%; bottom: 10px; width: 40px; height: 2px; background: #fcfcfc; content: ''; transform: translate(-50%, 0); transition: all 0.5s; opacity: 0;}
+.head > nav > ul > li a:hover::after {opacity: 1; }
+
+/* main > home */
+.home {height: 98vh; background: #181818; padding: 50px 0; box-sizing: border-box;}
+
+/* main > about */
+.about {height: 100%; overflow: hidden; background: #1f1f1f; padding: 180px 0; box-sizing: border-box;}
+
+.about .aboutbox1 {transition-duration: all 1s!important;}
+
+.about .aboutbox {overflow: hidden; padding: 30px 0; box-sizing: border-box;}
+
+.about figure {width: 280px; height: 380px; float: left; background: #fcfcfc; border-radius: 15px;} 
+.about figure > img {width: 100%; height: 100%; border-radius: 13px; }
+
+.about .aTxtbox {float: right; width: 70%; color: #fcfcfc; } 
+
+.about .aTxtbox > .aTxtbox1 {float: left; width: 48%;}
+
+.aTxtbox h3 {font-size: 20px;}
+
+/* main > about > aTxtbox1 > T1 */
+.aTxtbox1 > .T1 {padding: 30px 0; box-sizing: border-box;}
+.aTxtbox1 > .T1 p:nth-child(1) {display: inline-block; font-size: 35px;}
+.aTxtbox1 > .T1 p:nth-child(2) {display: inline-block; font-size: 12px;}
+.aTxtbox1 > .T1 p:nth-child(3) {font-size: 14px;}
+
+/* main > about > aTxtbox1 > T2 */
+.aTxtbox1 > .T2 {margin-top: 15px; padding: 50px 0; box-sizing: border-box;} 
+.aTxtbox1 > .T2 > h3 {margin-bottom: 10px; font-size: 23px;}
+.aTxtbox1 > .T2 > p {margin-bottom: 5px; font-size: 15px;}
+
+/* main > about > aTxtbox2 */
+.about .aTxtbox > .aTxtbox2 {float: right; width: 52%; padding: 35px 0; box-sizing: border-box;} 
+
+/* main > about > aTxtbox1 > T3 */
+.aTxtbox2 > .T3 {overflow: hidden; margin-bottom: 30px;}
+.aTxtbox2 > .T3 > h3 {margin-bottom: 10px; font-size: 23px;}
+.aTxtbox2 > .T3 > p {float: left; width: calc(100%/7); text-align: center;}
+
+/* main > about > aTxtbox1 > T4 */
+.aTxtbox2 > .T4 {margin-bottom: 30px;}
+.aTxtbox2 > .T4 > h3 {margin-bottom: 10px; font-size: 23px;}
+
+/* main > about > aTxtbox1 > T5 */
+.aTxtbox2 > .T5 {margin-bottom: 30px;}
+.aTxtbox2 > .T5 > h3 {margin-bottom: 10px; font-size: 23px;}
+
+/* main > froject */
+.froject {height: 100%;  padding: 80px 0; box-sizing: border-box; background: #181818;}
+
+/* main > froject > fobox */
+
+.frobox {position: relative; transition-duration: 1s!important;} 
+
+.frobox .frobox1 {margin: 0 50px;}
+
+.frobox1 .frobox1_1 {height: 685px;}
+.frobox1 .frobox1_1 a {display: block; width: 100%; height: 100%;} 
+
+/*  */
+.frobox1 .frobox1_1 .frono {position: relative;}
+.frobox1 .frobox1_1 .frono .frotxt {position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); opacity: 0; transition: all 0.5s; color: #fcfcfc; padding: 30px; box-sizing: border-box; font-size: 15px;}
+.frobox1 .frobox1_1 .frono .frotxt p {margin-bottom: 15px;}
+.frobox1 .frobox1_1 .frono .frotxt p:nth-child(1) {font-size: 30px; font-weight: bold;}
+.frobox1 .frobox1_1 .frono .frotxt p:nth-child(2) {line-height: 1.7;}
+.frobox1 .frobox1_1 .frono:hover .frotxt {opacity: 1;}
+.frobox1 .frobox1_1 .frono .frotxt p:last-child {position: absolute; width: 100%; left: 0; bottom: 5%; margin: 0; font-size: 20px!important; font-weight: bold; color: #fcfcfc; text-align: center;}
+
+.frobox1 .frobox1_1 .froimg {height: 100%;}
+
+.frobox1 .frobox1_1 .fro_no1 .froimg {width: 100%; height: 100%; background: url(../img/project/project_dokdo/dokdo_img1.png) no-repeat top/100%;}
+.frobox1 .frobox1_1 .fro_no2 .froimg {width: 100%; height: 100%; background: url(../img/project/project_ks/ks_img1.png) no-repeat top/100%;}
+.frobox1 .frobox1_1 .fro_no3 .froimg {width: 100%; height: 100%; background: url(../img/project/project_sma/smacheong_img1.png) no-repeat top/100%;}
+.frobox1 .frobox1_1 .fro_no4 .froimg {width: 100%; height: 100%; background: url(../img/project/project_center/center_main.png) no-repeat top/100%;}
+
+/*  */
+#next , #prev {color: #fcfcfc; transition: all 0.3s;}
+#next::after , #prev::after  {font-size: 35px; font-weight: bold;}
+#next:hover {transform: translateX(10px);}
+#prev:hover {transform: translateX(-10px);}
+
+/* contact */
+.contact {height: 60%; overflow: hidden; background: #1f1f1f; padding: 100px 0; box-sizing: border-box;}
+
+.contact .QRcode {float: left; width: 60%; text-align: center;}
+.contact .QRcode figure a {display: inline-block; width: 180px; height: 180px; margin-bottom: 15px;}
+.contact .QRcode figure a img {width: 100%; height: 100%;}
+.contact .QRcode figure p {color: #fcfcfc; font-size: 14px;}
+
+.contact .conttxt {float: right; width: 40%; padding: 25px 0; box-sizing: border-box; color: #fcfcfc;}
+.contact .conttxt p {margin-bottom: 15px;}
+.contact .conttxt p:nth-child(1) {font-size: 30px;}
+
+/* footer */
+footer {background: #1f1f1f; padding: 15px 0; box-sizing: border-box; text-align: center; font-size: 14px; color: #ffffff86;}
+
+/* 반응형 */
+/* 1024-1250 */
+@media (min-width: 1024px) and (max-width: 1250px) {
+
+    .inner {width: 100%; padding: 0 30px; box-sizing: border-box;}
+
+    h3 {margin-bottom: 50px;}
+    h3::after {width: 420px;}
+
+    /* main > about */
+    .about {padding: 80px 0; box-sizing: border-box;}
+
+    .about figure {width: 255px; height: 335px;}
+
+    /* main > froject */
+    .frobox1 .frobox1_1 {height: 500px;}
+
+    .frobox1 .frobox1_1 .frono .frotxt {padding: 20px 25px; font-size: 12.5px;}
+    .frobox1 .frobox1_1 .frono .frotxt p:nth-child(1) {font-size: 20px;}
+    .frobox1 .frobox1_1 .frono .frotxt p {margin-bottom: 10px;}
+    .frobox1 .frobox1_1 .frono .frotxt p:last-child {bottom: 2%; font-size: 15px!important;}
+
+    /* contact */
+    .contact .QRcode {width: 55%;}
+    .contact .conttxt {width: 45%;}
+}
+
+/* 768-1023 */
+@media (min-width: 600px) and (max-width: 1023px) {
+
+    .inner {width: 100%; padding: 0 30px; box-sizing: border-box;}
+
+    h3 {margin-bottom: 50px;}
+    h3::after {width: 400px;}
+
+    /* main > about */
+    .about {padding: 60px 0;}
+    
+    .about .aboutbox {padding: 0;}
+
+    .aTxtbox1 > .T2 {padding: 30px 0; margin-top: 0;}
+
+    .about figure {float: none; margin: 0 auto;}
+
+    .about .aTxtbox {float: none; width: 100%; padding: 0 30px; box-sizing: border-box;}
+    
+    /* main > froject */
+    .frobox1 .frobox1_1 {height: 470px;}
+
+    .frobox1 .frobox1_1 .frono .frotxt {padding: 40px 25px; font-size: 14px;}
+    .frobox1 .frobox1_1 .frono .frotxt p:nth-child(1) {font-size: 25px;}
+    .frobox1 .frobox1_1 .frono .frotxt p:nth-child(2) {display: none;}
+
+    /* contact */
+    .contact .conttxt p:nth-child(1) {font-size: 25px;}
+
+    .contact .QRcode {width: 55%;}
+    .contact .conttxt {width: 45%;}
+}
+
+/* 600-767 */
+@media (min-width: 600px) and (max-width: 767px) {
+    .inner {width: 100%; padding: 0 30px; box-sizing: border-box;}
+
+    /* main > about */
+    .about {padding: 60px 0;}
+    
+    .about .aboutbox {padding: 0;}
+
+    .aTxtbox1 > .T1 p:nth-child(1) {font-size: 30px;}
+    .aTxtbox1 > .T2 {padding: 0; margin-top: 0;}
+
+    .about figure {float: none; margin: 0 auto; width: 250px; height: 345px;}
+
+    .about .aTxtbox > .aTxtbox1 {float: none; width: 100%;}
+    .about .aTxtbox > .aTxtbox2 {float: none; width: 100%; }
+
+    .aTxtbox h4 {margin-bottom: 10px;}
+
+    /* main > froject */
+    .frobox .frobox1 {margin: 0 30px;}
+
+    .frobox1 .frobox1_1 {height: 440px;}
+
+    .frobox1 .frobox1_1 .frono .frotxt {padding: 40px 25px; font-size: 14px;}
+    .frobox1 .frobox1_1 .frono .frotxt p:nth-child(1) {font-size: 25px;}
+    .frobox1 .frobox1_1 .frono .frotxt p:nth-child(2) {display: none;}
+
+    #next::after , #prev::after  {font-size: 25px;}
+    #next {right: -10px;}
+    #prev {left: -10px;}
+
+    /* contact */
+    .contact {padding: 50px 0;}
+    .contact .conttxt p:nth-child(1) {font-size: 20px;}
+
+    .contact .QRcode {float: none; width: 100%;}
+    .contact .QRcode figure a {width: 130px; height: 130px;}
+    .contact .QRcode figure p {font-size: 13px;}
+
+    .contact .conttxt {float: none; width: 100%; padding: 0 0 30px 0;}
+
+    /* footer */
+    footer {padding: 20px 0; font-size: 13px;}
+}
+
+/* 430-599 */
+@media (min-width: 430px) and (max-width: 599px) { 
+    .inner {width: 100%; padding: 0 30px; box-sizing: border-box;}
+
+    h3 {margin-bottom: 30px;}
+    h3::after {width: 360px;}
+
+    /* main > about */
+    .about {padding: 60px 0;}
+    
+    .about .aboutbox {padding: 0;}
+
+    .aTxtbox1 > .T1 p:nth-child(1) {font-size: 30px;}
+    .aTxtbox1 > .T2 {padding: 0; margin-top: 0;}
+
+    .about figure {float: none; margin: 0 auto; width: 210px; height: 280px;}
+
+    .about .aTxtbox {float: none; width: 100%; padding: 0 30px; box-sizing: border-box;}
+    .about .aTxtbox > .aTxtbox1 {float: none; width: 100%;}
+    .aTxtbox1 > .T2 > p {font-size: 14px;}
+    .about .aTxtbox > .aTxtbox2 {float: none; width: 100%;  font-size: 14px;}
+
+    .aTxtbox h4 {margin-bottom: 10px;}
+
+    /* main > froject */
+    .frobox .frobox1 {margin: 0 30px;}
+
+    .frobox1 .frobox1_1 {height: 550px;}
+
+    .frobox1 .frobox1_1 .frono .frotxt {padding: 40px 25px; font-size: 14px;}
+    .frobox1 .frobox1_1 .frono .frotxt p:nth-child(1) {font-size: 25px;}
+    .frobox1 .frobox1_1 .frono .frotxt p:nth-child(2) {display: none;}
+    .aTxtbox h4 {font-size: 18px;}
+
+    #next::after , #prev::after  {font-size: 25px;}
+    #next {right: -10px;}
+    #prev {left: -10px;}
+
+    /* contact */
+    .contact {padding: 50px 0;}
+    .contact .conttxt p:nth-child(1) {font-size: 20px;}
+
+    .contact .QRcode {float: none; width: 100%;}
+    .contact .QRcode figure a {width: 130px; height: 130px;}
+    .contact .QRcode figure p {font-size: 13px;}
+    
+
+    .contact .conttxt {float: none; width: 100%; padding: 0 0 30px 0;}
+
+    /* footer */
+    footer {padding: 20px 0; font-size: 13px;}
+}
+
+/*  */
+/* 320-429 */
+@media (min-width: 0px) and (max-width: 429px) {
+    .inner {width: 100%; padding: 0 30px; box-sizing: border-box;}
+
+    h3 {margin-bottom: 30px; font-size: 25px;}
+    h3::after {width: 200px;}
+
+    /* main > about */
+    .about {padding: 60px 0;}
+    
+    .about .aboutbox {padding: 0;}
+
+    .aTxtbox1 > .T1 p:nth-child(1) {font-size: 30px;}
+    .aTxtbox1 > .T2 {padding: 0; margin-top: 0;}
+
+    .about figure {float: none; margin: 0 auto; width: 210px; height: 280px;}
+
+    .about .aTxtbox {float: none; width: 100%; padding: 0;}
+    .about .aTxtbox > .aTxtbox1 {float: none; width: 100%;}
+    .aTxtbox1 > .T2 > p {font-size: 14px;}
+    .about .aTxtbox > .aTxtbox2 {float: none; width: 100%;  font-size: 14px;}
+
+    .aTxtbox h4 {margin-bottom: 10px;}
+
+    /* main > froject */
+    .frobox .frobox1 {margin: 0 10px;}
+
+    .frobox1 .frobox1_1 {height: 550px;}
+
+    .frobox1 .frobox1_1 .frono .frotxt {padding: 40px 25px; font-size: 14px;}
+    .frobox1 .frobox1_1 .frono .frotxt p:nth-child(1) {font-size: 25px;}
+    .frobox1 .frobox1_1 .frono .frotxt p:nth-child(2) {display: none;}
+    .aTxtbox h4 {font-size: 18px;}
+
+    .frobox1 .frobox1_1 .fro_no1 .froimg, .frobox1 .frobox1_1 .fro_no3 .froimg {background-size: 120%;}
+
+
+
+    #next::after , #prev::after  {font-size: 25px;}
+    #next {right: -20px;}
+    #prev {left: -20px;}
+
+    /* contact */
+    .contact {padding: 50px 0;}
+    .contact .conttxt p:nth-child(1) {font-size: 20px;}
+    .contact .conttxt p:nth-child(2), .contact .conttxt p:nth-child(2)  {font-size: 14px;}
+
+    .contact .QRcode {float: none; width: 100%;}
+    .contact .QRcode figure a {width: 130px; height: 130px;}
+    .contact .QRcode figure p {font-size: 12px;}
+    
+
+    .contact .conttxt {float: none; width: 100%; padding: 0 0 30px 0;}
+
+    /* footer */
+    footer {padding: 20px 5px; font-size: 12px;}
+}
+
