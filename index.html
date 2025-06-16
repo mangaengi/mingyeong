@@ -13,20 +13,21 @@
     <meta property="og:image" content="https://mangaengi.github.io/M_g/img/1.png" />
     <meta property="og:url" content="https://mangaengi.github.io/M_g/" />
     
-
+    <!-- css  -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font.css">
-
     <link rel="stylesheet" href="css/index.css">
 
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <!-- js -->
     <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/jquery-ui.min.js"></script>
 
+    <!-- 스와이퍼 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -34,64 +35,91 @@
 <body>
     <div id="wrap">
         <header>
-            <div class="inner head">
+            <div class="head inner">
                 <h1>Min Gyeong</h1>
-                <nav>
-                    <ul class="pc">
-                        <li><a href="#page1">HOME</a></li>
-                        <li><a href="#page2">ABOUT</a></li>
-                        <li><a href="#page3">PROJECT</a></li>
-                        <li><a href="#page4">CONTACT</a></li>
-                    </ul>
+                <nav class="menu">
+                    <div class="pc">
+                        <ul>
+                            <li><a href="#page1">HOME</a></li>
+                            <li><a href="#page2">ABOUT</a></li>
+                            <li><a href="#page3">PROJECT</a></li>
+                            <li><a href="#page4">DESIGN</a></li>
+                            <li><a href="#page5">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile">
+                        <button class="mobtn" id="mobtn">&#8803;	</button>
+                        <div id="mobg"></div>
+                        <div class="moslide" id="moslide">
+                            <button class="closebtn" id="closebtn">&#10005;</button>
+                            <ul>
+                                <li><a href="#page1">HOME</a></li>
+                                <li><a href="#page2">ABOUT</a></li>
+                                <li><a href="#page3">PROJECT</a></li>
+                                <li><a href="#page4">DESIGN</a></li>
+                                <li><a href="#page5">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>
+
         <main>
             <section id="page1" class="home">
-                <h2>안녕하세요 정민경의 포트폴리오 입니다!안녕하세요 정민경의 포트폴리오 입니다!</h2>
+                <h2 class="ho_tit">
+                    <span>Welcome</span>
+                    <span>Min gyeong</span>
+                    <span>Portfolio</span>
+                </h2>
             </section>
             <section id="page2" class="about">
                 <div class="aboutbox1 inner">
                     <h3>ABOUT</h3>
-                    <figure>
-                        <img src="img/about/My_picture.png" alt="증명사진">
-                    </figure>
-                    <div class="aTxtbox">
-                        <div class="aTxtbox1">
-                            <div class="T1">
-                                <p>정민경 </p>
-                                <p>Jeong Min Gyeong</p>
-                                <p>e-mail : <span>cdr9898@naver.com</span></p>
+                    <div class="aboutbox">
+                        <figure>
+                            <img src="img/about/My_picture.png" alt="증명사진">
+                        </figure>
+                        <div class="aTxtbox">
+                            <div class="aTxtbox1">
+                                <div class="T1">
+                                    <p>정민경 </p>
+                                    <p>Jeong Min Gyeong</p>
+                                    <p>e-mail : <span>cdr9898@naver.com</span></p>
+                                </div>
+                                <div class="T2">
+                                    <h4>Career</h4>
+                                    <p>24.12-25.05 태권도장 근무</p>
+                                    <p>24.06-24.10 홀리데이투어 근무 (퍼블리셔)</p>
+                                    <p>24.03-24.05 애드쿡홀딩스 근무 (디자인)</p>
+                                    <p>22.11-23.03 태권도장 근무</p>
+                                    <p>20.06-22.10 서비스직 근무</p>
+                                    <p>20.03-20.11 태권도장 근무</p>
+                                </div>
                             </div>
-                            <div class="T2">
-                                <h4>Career</h4>
-                                <p>24.06-24.10 홀리데이투어 근무 (퍼블리셔)</p>
-                                <p>24.03-24.05 애드쿡홀딩스 근무 (디자인)</p>
-                                <p>22.11-23.03 태권도장 근무</p>
-                                <p>20.06-22.10 서비스직 근무</p>
-                                <p>20.03-20.11 태권도장 근무</p>
-                            </div>
-                        </div>
-                        <div class="aTxtbox2">
-                            <div class="T3">
-                                <h4>Skills</h4>
-                                <p>#HTML</p>
-                                <p>#CSS</p>
-                                <p>#JS</p>
-                                <p>#Ai</p>
-                                <p>#Ps</p>
-                                <p>#Xd</p>
-                                <p>#Git</p>
-                            </div>
-                            <div class="T4">
-                                <h4>Education</h4>
-                                <p>- 2023 UI/UX 반응형 웹디자인&웹퍼블리셔 양성과정 960시간 수료</p>
-                            </div>
-                            <div class="T5">
-                                <h4>License</h4>
-                                <p>23.12 - 웹디자인기능사 </p>
-                                <p>21.07 - 운전면허 1종 보통 </p>
-                                <p>21.01 - Office Word 2016 Expert</p>
+                            <div class="aTxtbox2">
+                                <div class="T3">
+                                    <h4>Skills</h4>
+                                    <p>#HTML</p>
+                                    <p>#CSS</p>
+                                    <p>#JS</p>
+                                    <p>#Ai</p>
+                                    <p>#Ps</p>
+                                    <p>#Xd</p>
+                                    <p>#Git</p>
+                                </div>
+                                <div class="T4">
+                                    <h4>Education</h4>
+                                    <p>- 2023 UI/UX 반응형 웹디자인&웹퍼블리셔 양성과정 960시간 수료</p>
+                                </div>
+                                <div class="T5">
+                                    <h4>License</h4>
+                                    <p>24.03 - 정보처리기사 (필기합격)</p>
+                                    <p>23.12 - 웹디자인기능사 </p>
+                                    <p>23.06 - 한국사능력검정시험 심화 3급</p>
+                                    <p>21.07 - 운전면허 1종 보통 </p>
+                                    <p>21.01 - Office Word 2016 Expert</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -100,104 +128,226 @@
             <section id="page3" class="froject">
                 <div class="frojectbox inner">
                     <h3>PROJECT</h3>
-                    <!--  -->
-                    <div class="frobox" data-aos="zoom-in">
-                        <div #swiperRef="" class="swiper frobox1">
-                            <div class="swiper-wrapper frobox1_1">
-                                <div class="swiper-slide frono fro_no1">
-                                    <a href="https://mangaengi.github.io/porfolio_dokdo/" target="_blank">
-                                        <div class="froimg"></div>
-                                        <div class="frotxt">
-                                            <p>독도전시관</p>
+                    <ul class="pa3_probox">
+                        <!--  -->
+                        <li>
+                            <div class="promodalbox">
+                                <div class="protopbox">
+                                    <div class="promotxt">
+                                        <span>01</span>
+                                        <span>독도전시관</span>
+                                    </div>
+                                    <div class="promoimg">
+                                        <figure>
+                                            <img src="img/project/pcimg1.png" alt="독도전시관 pc이미지">
+                                        </figure>
+                                    </div>
+                                </div>
+                                <button class="pormodal_openbtn" data-target="#promodal1">자세히보기 </button>
+                            </div>
+
+                            <div class="promodal" id="promodal1">
+                                <div class="pormodal_body">
+                                    <button class="pormodal_colsebtn">&times;</button>
+                                    <div class="promotit">
+                                        <h5>_독도전시관</h5>
+                                        <P class="progobtn"><a href="https://mangaengi.github.io/porfolio_dokdo/" target="_blank">이동하기 &#8640;</a></P>
+                                    </div>
+                                    <div class="promobox">
+                                        <div class="protxt">
                                             <p>독도전문관 사이트를 클론코딩하면서 HTML과 CSS를 기반으로 제이쿼리 라이브러리와 플러그인를 사용해서 페이지를 제작했습니다. 슬라이드 효과는 플러그인을 사용하였지만, FulldownMenu, tap 기능 등은 js로 직접 구현하였습니다.</p>
                                             <p>pc버전 : 1920px</p>
                                             <p>제작기간 : 2주</p>
                                             <p>개인프로젝트 (퍼블리싱 100%) </p>
-                                            <p>사용한 스킬 <br> javascript / Jquery / HTML / CSS / Photoshop</p>
-                                            <p>제작페이지 <br> main / 인사말 / 관람안내 / 전시안내 / 독도현황 / 공지사항 / 로그인</p>
-                                            <P>이동하기 &#8640;</P>
+                                            <p><span>사용한 스킬 : </span>  <br> javascript / Jquery / HTML / CSS / Photoshop</p>
+                                            <p><span>제작페이지 : </span> <br> main / 인사말 / 관람안내 / 전시안내 / 독도현황 / 공지사항 / 로그인</p>
                                         </div>
-                                    </a>
+                                        <div class="proimg">
+                                            <p><img src="img/project/dokdo_img1.png" alt="독도전시관 사이트 이미지"></p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="swiper-slide frono fro_no2">
-                                    <a href="javascript:;" target="_blank">
-                                        <div class="froimg"></div>
-                                        <div class="frotxt">
-                                            <p>KS벽지</p>
-                                            <p>KS벽지는 처음 도전해본 클론 코딩 프로젝트로 반응형웹을 목표로 웹표준과 웹접근성을 고려하여 구현했습니다. 특히 자바스크립트로 탭기능/풀다운메뉴 등의 기능적 요소를 만들어봄으로써 요소의 동적인 기능이 웹 사이트에서 매우 중요한 역할이란 것을 배웠습니다. 프로젝트가 끝났을 때의 웹 퍼블리셔로 더욱 성장하고싶은 욕심을 갖게하는 또 한번의 프로젝트가 되었습니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="promodalbox">
+                                <div class="protopbox">
+                                    <div class="promotxt">
+                                        <span>02</span>
+                                        <span>KS벽지</span>
+                                    </div>
+                                    <div class="promoimg">
+                                        <figure>
+                                            <img src="img/project/pcimg2.png" alt="ks벽지 pc이미지">
+                                        </figure>
+                                    </div>
+                                </div>
+                                <button class="pormodal_openbtn" data-target="#promodal2">자세히보기</button>
+                            </div>
+
+                            
+                            <div class="promodal" id="promodal2">
+                                <div class="pormodal_body">
+                                    <button class="pormodal_colsebtn">&times;</button>
+                                    <div class="promotit">
+                                        <h5>_KS벽지</h5>
+                                        <P class="progobtn"><a href="https://mangaengi.github.io/portfolio_ks/" target="_blank">이동하기 &#8640;</a></P>
+                                    </div>
+                                    <div class="promobox">
+                                        <div class="protxt">
+                                            <p>KS벽지 클론 코딩은 처음 도전한 프로젝트로, 적응형 웹을 목표로 웹표준과 접근성을 고려해 구현했습니다. 자바스크립트로 탭 기능과 풀다운 메뉴 등을 직접 구현하며 웹에서 동적인 요소의 중요성을 깨달았고, 프로젝트를 통해 웹 퍼블리셔로 성장하고 싶다는 열망이 더욱 커졌습니다.</p>
                                             <p>pc버전 : 1920px / Mobile 버전 : 640px</p>
                                             <p>제작기간 : 2주</p>
                                             <p>개인프로젝트 (퍼블리싱 100%) </p>
-                                            <p>사용한 스킬 <br> javascript / Jquery / HTML / CSS / Photoshop</p>
-                                            <p>제작페이지 <br> main / 계열사 / 회사소개 / 제품소개 / 인증 및 수상 / 1:1 문의</p>
-                                            <P>이동하기 &#8640;</P>
+                                            <p><span>사용한 스킬 : </span> <br> javascript / Jquery / HTML / CSS / Photoshop</p>
+                                            <p><span>제작페이지 : </span> <br> main / 계열사 / 회사소개 / 제품소개 / 인증 및 수상 / 1:1 문의</p>
                                         </div>
-                                    </a>
+                                        <div class="proimg">
+                                            <p><img src="img/project/ks_img1.png" alt="ks벽지 사이트 이미지"></p>
+                                        </div>
+                                        
+                                    </div>
                                 </div>
-                                <div class="swiper-slide frono fro_no3">
-                                    <a href="javascript:;" target="_blank">
-                                        <div class="froimg"></div>
-                                        <div class="frotxt">
-                                            <p>삼청각</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="promodalbox">
+                                <div class="protopbox">
+                                    <div class="promotxt">
+                                        <span>03</span>
+                                        <span>삼청각</span>
+                                    </div>
+                                    <div class="promoimg">
+                                        <figure>
+                                            <img src="img/project/pcimg3.png" alt="삼청각 사이트 pc이미지">
+                                        </figure>
+                                    </div>
+                                </div>
+                                <button class="pormodal_openbtn" data-target="#promodal3">자세히보기</button>
+                            </div>
+
+                            <div class="promodal" id="promodal3">
+                                <div class="pormodal_body">
+                                    <button class="pormodal_colsebtn">&times;</button>
+                                    <div class="promotit">
+                                        <h5>_삼청각</h5>
+                                        <P class="progobtn"><a href="https://mangaengi.github.io/portfolio_smacheong/" target="_blank">이동하기 &#8640;</a></P>
+                                    </div>
+                                    <div class="promobox">
+                                        <div class="protxt">
                                             <p>삼청각의 기존 GNB메뉴는 UI 사용성 측면에서 다소 불편했습니다. 이 부분을 개선해서 마우스 이벤트에 빠르게 반응하는 풀다운 메뉴로 기능 개선을 해보았습니다. 웹 퍼블리셔는 심미성과 기능적인 요소 모두를 고려하여 UI/UX를 디자인하고 구현해야하는 직무라는 점을 다시 한번 생각해볼 수 있는 프로젝트였습니다.</p>
                                             <p>pc버전 : 1920px / Mobile 버전 : 640px</p>
                                             <p>제작기간 : 2주</p>
                                             <p>개인프로젝트 (퍼블리싱 100%) </p>
-                                            <p>사용한 스킬 <br> javascript / Jquery / HTML / CSS / Photoshop</p>
-                                            <p>제작페이지 <br> main / 삼청각 소개 / 일화당 / 예약 · 문의</p>
-                                            <P>이동하기 &#8640;</P>
+                                            <p><span>사용한 스킬 : </span> <br> javascript / Jquery / HTML / CSS / Photoshop</p>
+                                            <p><span>제작페이지 : </span> <br> main / 삼청각 소개 / 일화당 / 예약 · 문의</p>
                                         </div>
-                                    </a>
+                                        <div class="proimg">
+                                            <p><img src="img/project/smacheong_img1.png" alt="삼청각 사이트 이미지"></p>
+                                        </div>
+                                        
+                                    </div>
                                 </div>
-                                <div class="swiper-slide frono fro_no4">
-                                    <a href="javascript:;" target="_blank">
-                                        <div class="froimg"></div>
-                                        <div class="frotxt">
-                                            <p>center</p>
-                                            <p>center는 첫 팀작업이며 firebase를 기반으로 제작하여 상품 올리기,수정, 상품리스트, 상품디테일페이지, 회원가입, 카카오로그인 등 다양한 기능을 구현했습니다. 상품디테일페이지와 수정페이지를 제작했으며 디테일페이지에서 사용자가 셀렉트박스에 있는 값을 선택하면 화면에 보여지게 구현하였습니다. 장바구니 등 버튼을 누르면 모달창으로 화면에 보여지게 자바스크립트를 사용하여 구현했습니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="promodalbox">
+                                <div class="protopbox">
+                                    <div class="promotxt">
+                                        <span>04</span>
+                                        <span>CENTER</span>
+                                    </div>
+                                    <div class="promoimg moporimg">
+                                        <figure>
+                                            <img src="img/project/mobile1.png" alt="center 사이트 모바일 이미지">
+                                        </figure>
+                                    </div>
+                                </div>
+                                <button class="pormodal_openbtn" data-target="#promodal4">자세히보기</button>
+                            </div>
+
+                            <div class="promodal" id="promodal4">
+                                <div class="pormodal_body">
+                                    <button class="pormodal_colsebtn">&times;</button>
+                                    <div class="promotit">
+                                        <h5>_CENTER</h5>
+                                        <P class="progobtn"><a href="https://centert-3ae9f.web.app/" target="_blank">이동하기 &#8640;</a></P>
+                                    </div>
+                                    <div class="promobox">
+                                        <div class="protxt">
+                                            <p>Center는 Firebase 기반의 첫 팀 프로젝트로, 상품 등록/수정, 리스트, 상세 페이지, 회원가입, 카카오 로그인 등의 기능을 구현했습니다. 저는 상품 상세 및 수정 페이지를 담당했으며, 셀렉트 박스를 통해 선택한 옵션이 화면에 실시간 반영되도록 구현했습니다.또한, 장바구니 버튼 클릭 시 모달 창이 나타나는 기능을 JavaScript로 구현해 사용자 경험을 개선했습니다.</p>
                                             <p>Mobile 버전 : 430px</p>
                                             <p>제작기간 : 7일</p>
                                             <p>팀프로젝트(기여도 : 4명 / 25%)</p>
-                                            <p>사용한 스킬 <br> javascript / Jquery / HTML / CSS / XD / PowerPoint / Firebase</p>
-                                            <p>제작페이지 <br> main / 메뉴 / 상품 리스트 / 상품 올리기 / 상품 페이지 / 수정 / 로그인 / 회원가입</p>
-                                            <P>이동하기 &#8640;</P>
+                                            <p><span>사용한 스킬 : </span> <br> javascript / Jquery / HTML / CSS / XD / PowerPoint / Firebase</p>
+                                            <p><span>제작페이지 : </span> <br> main / 메뉴 / 상품 리스트 / 상품 올리기 / 상품 페이지 / 수정 / 로그인 / 회원가입</p>
                                         </div>
-                                    </a>
+                                        <div class="proimg">
+                                            <p><img src="img/project/center_main.png" alt="center 모바일 이미지"></p>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+                        </li>
+                        <!--  -->
+                    </ul>
+
+                </div>
+            </section>
+            <section id="page4" class="design">
+                <div class="designbox inner">
+                    <h3>DESIGN</h3>
+                    <div swiperRef="" class="swiper design_1 ">
+                        <div class="swiper-wrapper design_1_1">
+                            <div class="swiper-slide diimg">
+                                <p><img src="img/design/snsimg1.jpg" alt="sns이미지 사진"></p>
+                            </div>
+                            <div class="swiper-slide diimg">
+                                <p><img src="img/design/snsimg2.jpg" alt="sns이미지 사진"></p>
+                            </div>
+                            <div class="swiper-slide diimg">
+                                <p><img src="img/design/snsimg3.jpg" alt="sns이미지 사진"></p>
+                            </div>
+                            <div class="swiper-slide diimg">
+                                <p><img src="img/design/snsimg4.jpg" alt="sns이미지 사진"></p>
+                            </div>
+                            <div class="swiper-slide diimg">
+                                <p><img src="img/design/snsimg5.jpg" alt="sns이미지 사진"></p>
                             </div>
                             
                         </div>
-                        <div class="swiper-button-next" id="next"></div>
-                        <div class="swiper-button-prev" id="prev"></div>
-                        <!-- <div class="swiper-pagination"></div> -->
                     </div>
                 </div>
             </section>
-            <section id="page4" class="contact">
+            <section id="page5" class="contact">
                 <div class="inner">
                     <h3>CONTACT</h3>
-                    <div class="conttxt">
-                        <p>Thank You For Watching</p>
-                        <p>포트폴리오를 끝까지 봐주셔서 감사합니다. </p>
-                        <p>e-mail : cdr9898@naver.com</p>
-                    </div>
-                    <div class="QRcode">
-                        <figure>
-                            <a href="https://open.kakao.com/o/sVHxN0Mf" target="_blank">
-                                <img src="img/contact/contact_kakao.png" alt="카카오 QR코드">
-                            </a>
-                            <p>(QR코트를 인식하시거나 클릭하시면 연결됩니다.)</p>
-                        </figure>
+                    <div class="conbox">
+                        <div class="conttxt">
+                            <p>Thank You For Watching</p>
+                            <p>포트폴리오를 끝까지 봐주셔서 감사합니다. </p>
+                            <p>e-mail : cdr9898@naver.com</p>
+                        </div>
+                        <div class="QRcode">
+                            <figure>
+                                <a href="https://open.kakao.com/o/sVHxN0Mf" target="_blank">
+                                    <img src="img/contact/contact_kakao.png" alt="카카오 QR코드">
+                                </a>
+                                <p>(QR코트를 인식하시거나 클릭하시면 연결됩니다.)</p>
+                            </figure>
+                        </div>
                     </div>
                 </div>
             </section>
-        </main>
+
+        </main> 
         <footer>
             <div>
                 <p>이 포트폴리오는 100% 창작물 입니다.</p>
-                <p>&copy; 2024 - 2025 Jeong min gyeong All rights reserved.</p>
+                <p>&copy; 2025 Jeong min gyeong All rights reserved.</p>
             </div>
         </footer>
+        
     </div>
     <script src="js/swiper.js"></script>
     <script>
